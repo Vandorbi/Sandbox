@@ -40,27 +40,30 @@ export default class Content {
         const bestSportman: [string, boolean] = ["Messi", true];
 
         res.write("A nap tanulója: ");
-        res.write("${name}");
+        res.write(`${name}`);
 
-        res.write("Az idei év: ");
-        res.write("${ev}");
+        res.write("\nAz idei év: ");
+        res.write(`${ev}`);
 
-        res.write("Van barátnője: ");
-        res.write("${HasGirlfriend}");
+        res.write("\nVan barátnője: ");
+        res.write(`${HasGirlfriend}`);
 
-        res.write("Szegény?: ");
-        res.write("${isPoor}");
+        res.write("\nSzegény?: ");
+        res.write(`${isPoor}`);
 
-        res.write("Kedvenc zöldség: ");
-        res.write("${paradics}");
+        res.write("\nKedvenc zöldség: ");
+        res.write(`${paradics}`);
 
-        res.write("Kedvenc gyümölcs: ");
-        res.write("${paradics2}");
+        res.write("\nKedvenc gyümölcs: ");
+        res.write(`${paradics2}`);
 
-        res.write("Vega ételek: ");
+        res.write("\nVega ételek: ");
         for (let i = 0; i < vega.length; i++) {
-            res.write("${vega[i]}");
+            res.write(`${vega[i]}`);
         }
+        res.write("\nIdei legjobb sportoló: ");
+        res.write(`${bestSportman[1]}`);
+
         // <---- Fejezd be a kódolást
 
         res.write("</pre></form></body></html>");
